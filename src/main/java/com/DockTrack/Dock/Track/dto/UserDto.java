@@ -1,5 +1,6 @@
 package com.DockTrack.Dock.Track.dto;
 
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,8 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class UserDto {
-    private Long id; // Or Integer, depending on your database configuration
-
+    @Id
     private String EPFNumber;
     private String EmployeeName;
     private String Role;

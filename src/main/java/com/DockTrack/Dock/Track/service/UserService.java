@@ -28,7 +28,6 @@ public class UserService {
    }
 
    public UserDto createUser(UserDto userDto){
-
        userRepo.save(modelMapper.map(userDto,UserModel.class));//map frontend data to database
        return userDto;
    }

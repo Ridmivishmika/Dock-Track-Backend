@@ -11,10 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class UserModel {
     @Id
-
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO_INCREMENT in MySQL
-    private Long id; // Or Integer, depending on your database configuration
-
     private String EPFNumber;
     private String EmployeeName;
     private String Role;
